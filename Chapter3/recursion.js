@@ -1,6 +1,6 @@
-let variable1 = 88;
-let variable2;
-console.log(variable2||variable1);
+//let variable1 = 88;
+//let variable2;
+//console.log(variable2||variable1);
 
 function findSolutions(target){
     function find(value,history){

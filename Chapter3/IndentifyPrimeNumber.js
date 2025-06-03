@@ -1,4 +1,4 @@
-let number = null, arr = [], i = null, j = null, len = null, count = 2, divisible = null;
+let number = null, arr = [];
 
 const enterNumber = (number) => {
     if (number == 0) {
@@ -16,7 +16,7 @@ const enterNumber = (number) => {
 }
 
 function primes(numb, arr) {
-    let current = 2, i = 0, j = 0, len = 0;
+    let i = 0, j = 0, len = 0;
 
     for (i = 2; i <= numb; ++i) {
         len = arr.length;
@@ -32,6 +32,6 @@ function primes(numb, arr) {
     return arr;
 }
 
-enterNumber(55);
+enterNumber(59);
 
 console.log(arr);

@@ -1,6 +1,6 @@
 let number = null, arr = [], i = null, j = null, len = null, count = 2, divisible = null;
 
-const CheckNumber = (number) => {
+const enterNumber = (number) => {
     if (number == 0) {
         console.log("No number has been added");
     }
@@ -32,6 +32,6 @@ function primes(numb, arr) {
     return arr;
 }
 
-CheckNumber(55);
+enterNumber(55);
 
 console.log(arr);

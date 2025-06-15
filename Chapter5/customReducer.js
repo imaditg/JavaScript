@@ -34,4 +34,6 @@ function foreach(array,mfdate,epdate,print){
     }
 }
 
-foreach(groceryItems,(e) =>{return e.mfgDate},(e) =>{return e.expDate},(e)=>{return console.log(e)});
+foreach(groceryItems,(e) =>{return e.mfgDate},(e) =>{return e.expDate});
+
+console.log(groceryItems);

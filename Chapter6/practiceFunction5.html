@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function generatePerson(name){
+            let obj = {
+            name:name,
+            talk(){
+              return  console.log(`hello ${this.name}`);
+            }
+        }
+        return obj;
+        }
+        let sam = generatePerson("sam");
+        let ben = generatePerson("ben");
+        console.log(sam);
+        console.log(sam.talk());
+        console.log(ben);
+        console.log(ben.talk());
+    </script>
+</body>
+</html>

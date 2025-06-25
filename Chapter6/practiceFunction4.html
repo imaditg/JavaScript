@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Human(type,content){
+            this.ele = document.createElement(type);
+            this.ele.innerText = content;
+            document.body.append(this.ele);
+            this.ele.addEventListener('click',()=>{
+                console.log(this.ele);
+            })
+        }
+        let adi = new Human('p', "hello");
+
+        let Array = ['a','b','c'];
+
+        const myElement = Array.map(item =>{
+            return new Human('h1',item)
+        });
+    </script>
+</body>
+</html>

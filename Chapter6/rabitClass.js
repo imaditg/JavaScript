@@ -4,7 +4,7 @@ class Rabbit{
     }
     speak(line){
       let lines = `The ${this.type} rabbit say ${line}`;
-      return lines
+      return lines;
     }
 }
 

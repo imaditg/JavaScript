@@ -4,6 +4,8 @@ let array = []
 
 console.log("toString" in array);
 
+console.log(`Object hasown ${Object.hasOwn(array,"toString")}`);
+
 array = Object.create(null);
 
 console.log("toString" in array);

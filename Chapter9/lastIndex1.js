@@ -19,3 +19,9 @@ regx2.lastIndex = 2;
 console.log(regx2.exec("abcd"))
 
 console.log(regx2.lastIndex);
+
+let sticky = /abc/y;
+
+console.log(sticky.lastIndex);
+
+console.log(sticky.exec("xyz abc"));

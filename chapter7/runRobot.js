@@ -32,7 +32,7 @@ class VillageState {
         this.parcels = parcels;
     }
     move(destination){
-        console.log("this : ",this.place," des : ",destination);
+       // console.log("this : ",this.place," des : ",destination);
         // console.log("here");
         if(!roadGraph[this.place].includes(destination)){
             console.log("Robbot Not Found");
@@ -45,11 +45,11 @@ class VillageState {
                     return p;
                 }
                 else{
-                    console.log("Adress = ",p.address);
+                  //  console.log("Adress = ",p.address);
                     return {place : destination, address : p.address };
                 }
             }).filter(p => p.place != p.address);
-            // console.log("parcels are : ",parcels);
+             console.log("parcels are : ",parcels);
             return new VillageState(destination,parcels);
         }
     }
@@ -96,5 +96,6 @@ function runRobot(state,robot,memory){
     console.log(`Moved in ${action.direction}`);
     }
 }
+
 
 runRobot(VillageState.random(),randomRobot);
